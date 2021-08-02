@@ -1,0 +1,33 @@
+{
+  "name": "tonix-tuft/gloom",
+  "description": "A counting bloom filter with probabilistic deletion capabilities also allowing a risky deletion which may lead to false negatives if not carefully used.",
+  "keywords": [
+    "bloom-filter",
+    "bloom-filters",
+    "counting-bloom-filter",
+    "counting-bloom-filters",
+    "bloom",
+    "filter",
+    "data-structure",
+    "data-structures"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anton Bagdatyev (Tonix)",
+      "email": "antonytuft@gmail.com"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gloom\\": "src/Gloom/"
+    }
+  }
+}
