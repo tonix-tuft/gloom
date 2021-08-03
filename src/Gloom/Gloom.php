@@ -58,7 +58,7 @@ class Gloom {
   /**
    * @var int
    */
-  protected $maxNumberOfCollisionsEverRecordedPerBucket = 0;
+  protected $maxNumberOfCollisionsEverRecordedForBucket = 0;
 
   /**
    * Constructs a new bloom filter.
@@ -180,10 +180,10 @@ class Gloom {
         $duplicateIndicesMap[$index] = true;
         $this->bloomFilter[$index]['count']++;
         if (
-          $this->maxNumberOfCollisionsEverRecordedPerBucket <
+          $this->maxNumberOfCollisionsEverRecordedForBucket <
           $this->bloomFilter[$index]['count']
         ) {
-          $this->maxNumberOfCollisionsEverRecordedPerBucket =
+          $this->maxNumberOfCollisionsEverRecordedForBucket =
             $this->bloomFilter[$index]['count'];
         }
       }
